@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Models
+namespace DesignPatterns.Models.Impostos
 {
-    public class ISS : IImposto
+    public class ICMS : IImposto
     {
-        private const double PORCENTAGEM = 0.06;
+        private const double PORCENTAGEM = 0.05;
 
         public double Calcular(Orcamento orcamento) => orcamento.Valor * PORCENTAGEM;
     }
